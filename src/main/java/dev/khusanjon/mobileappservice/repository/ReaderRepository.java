@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ReaderRepository extends CrudRepository<ReaderEntity,Long> {
-    ReaderEntity findReaderEntityByEmail(String email);
+    ReaderEntity findByEmail(String email);
 }
